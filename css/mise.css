@@ -1,0 +1,217 @@
+body {
+  background-image: url(../img/weather_bg.jpg);
+  background-repeat: repeat;
+  background-size: 280%;
+  /* background-position: 0%; */
+  background-position-y: -900px;
+  /* height: 1800px; */
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid #59973c;
+  box-shadow: 0 6px 6px -4px #59973c;
+  background: #fff;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav .siteMap .siteBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#nav .siteMap .siteBtn a {
+  font-size: 25px;
+  color: #69737a;
+}
+#nav .siteMap .siteBtn a i {
+  margin-left: 10px;
+}
+#nav .siteMap .siteBtn img {
+  display: block;
+  width: 120px;
+  margin: 10px 15px 10px 35px;
+}
+
+#nav .siteMap .siteList {
+  position: absolute;
+  top: 100%;
+  left: 4%;
+  z-index: 999999;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  display: none;
+}
+#nav .siteMap .siteList li {
+  display: block;
+  margin: 10px 15px 20px;
+  padding: 20px 35px;
+  border-bottom: 1px solid #999;
+  font-size: 20px;
+}
+#nav .siteMap .siteList li:nth-child(1) {
+  border-top: 1px solid #000;
+}
+
+#nav .ctLogo {
+  display: block;
+  width: 250px;
+  padding: 15px 0 10px;
+}
+
+#nav .membership {
+  display: flex;
+  margin: 10px 20px;
+}
+#nav .membership li:nth-child(1) {
+  margin-right: 20px;
+}
+#nav .membership li:nth-child(2) {
+  position: relative;
+}
+#nav .membership li a {
+  display: block;
+  padding: 20px 10px;
+  font-size: 25px;
+}
+#nav .membership li + li::before {
+  content: "";
+  width: 1px;
+  height: 27px;
+  background: #000;
+  position: absolute;
+  top: 48%;
+  left: -9%;
+  transform: translateY(-50%);
+}
+
+/* 날씨 컨텐츠 */
+#content {
+  max-width: 1080px;
+  margin: 250px auto 150px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#content > h2 {
+  font-size: 50px;
+  padding: 20px 0 50px;
+  font-weight: bold;
+}
+
+#content > .sidoBtn {
+  margin: 0 0 10px 0;
+}
+
+#content > .sidoBtn > button {
+  padding: 5px 15px;
+  margin: 5px 10px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 17px;
+  /* font-weight: bold; */
+  border-radius: 5px;
+}
+
+#content > .sidoBtn > .on {
+  background: lightgreen;
+  color: green;
+  font-weight: bold;
+}
+
+#content .face {
+  width: 25%;
+  font-size: 24px;
+  /* margin: 20px; */
+  /* flex-grow: 1; */
+}
+
+#face {
+  /* border: 2px solid #fff; */
+  /* border-radius: 20px; */
+  /* padding:20px; */
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  margin: 50px 0 30px;
+  width: 900px;
+}
+
+#content .blinking {
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#content .placeList > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content .placeList > li > p {
+  width: 20%;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+#content .placeList > li:first-child > p:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+#content .placeList > li:first-child > p:last-child {
+  border-radius: 0px 10px 0 0;
+}
+
+#content .placeList > li:last-child > p:first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+
+#content .placeList > li:last-child > p:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+
+/*# sourceMappingURL=weather.css.map */

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box; background: transparent;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {width: 100%;}
+
+.cf::after { content:''; display:block; clear:both }
+.blind { position:absolute; width:0px; height:0px; overflow:hidden; text-indent:-9999px; line-height:0px; font-size:0px}
